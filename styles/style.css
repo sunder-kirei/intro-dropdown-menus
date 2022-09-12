@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 41%);
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  padding-inline: 2vw;
+}
+nav > ul > li {
+  padding-inline: 1rem;
+}
+nav > ul li {
+  font-size: 0.9rem;
+  transition: all 0.1s ease-in-out;
+}
+nav > ul li:hover {
+  font-weight: 700;
+  color: hsl(0deg, 0%, 8%);
+  opacity: 1;
+  cursor: pointer;
+}
+nav > ul button {
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+nav > ul button:hover {
+  font-weight: 700;
+  color: hsl(0deg, 0%, 8%);
+  opacity: 1;
+}
+nav > ul .login {
+  margin-left: auto;
+}
+nav > ul .login #register {
+  border: 3px solid rgba(105, 105, 105, 0.9);
+  border-radius: 1rem;
+  padding: 2vh 2vw;
+  margin-left: 2rem;
+}
+nav > ul .login #register:hover {
+  border-color: hsl(0deg, 0%, 8%);
+}
+nav > ul .dropdown-li {
+  position: relative;
+}
+nav > ul .dropdown {
+  background-color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  left: 0px;
+  margin-top: 2rem;
+  box-shadow: 0 0 4px hsla(0deg, 0%, 41%, 0.496);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+  top: -10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+}
+nav > ul .dropdown li {
+  display: flex;
+  align-items: center;
+  padding-block: 5px;
+  font-size: 0.9rem;
+}
+nav > ul .dropdown li img {
+  margin-right: 0.8rem;
+}
+nav > ul .features {
+  left: -2rem;
+  min-width: 120%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+nav > ul .company {
+  padding-left: 1.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7vw;
+  height: 90vh;
+}
+main section {
+  margin-left: 13vw;
+  margin-top: 13vh;
+}
+main section h1 {
+  font-size: 4rem;
+  color: hsl(0deg, 0%, 8%);
+  font-weight: 700;
+  margin-bottom: 6vh;
+}
+main section p {
+  margin-bottom: 7vh;
+  opacity: 0.8;
+}
+main section button {
+  color: hsl(0deg, 0%, 98%);
+  background-color: hsl(0deg, 0%, 8%);
+  font-weight: 700;
+  border: 3px solid hsl(0deg, 0%, 8%);
+  border-radius: 1rem;
+  padding: 2vh 2vw;
+  margin-bottom: 10vh;
+  transition: all 0.1s ease-in-out;
+}
+main section button:hover {
+  color: hsl(0deg, 0%, 8%);
+  background-color: hsl(0deg, 0%, 98%);
+  cursor: pointer;
+}
+main section .image-gallery {
+  display: flex;
+  justify-content: space-around;
+}
+main section .image-gallery img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main > img {
+  height: 75vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dropdown-btn > img {
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  margin-left: 2rem;
+}
+.logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=style.css.map */
